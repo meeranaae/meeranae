@@ -16,7 +16,7 @@
   <link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon/android-icon-192x192.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/f">
   <link rel="manifest" href="./assets/images/favicon/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="./assets/images/favicon/ms-icon-144x144.png">
@@ -453,7 +453,7 @@
               class="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
             <input type="hidden" name="tokenF" id="tokenF">
           </div>
-          <button type="submit"
+          <button type="submit" id="send"
             class="text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Send</button>
           <p class="text-xs text-gray-500 mt-3">We shall get back to you shortly.
           </p>
@@ -627,10 +627,12 @@
     const form = document.forms['submit2g'];
 
     form.addEventListener('submit', e => {
+      document.getElementById('send').disabled = true;
       e.preventDefault();
 
+
       fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => response.json().then(data => ({ data: data, status: response.status })).then(res => { console.log('DATA:', ('email exist' == res.data.error) ? document.getElementById('contact-us').innerHTML = "<div class='text-base font-semibold p-2 items-center bg-primary1 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-primary1 uppercase px-2 py-1 text-xs font-bold mr-3'>Oops</span><span class='mr-2 text-left flex-auto'>Your email is already with us! Our team will revert to you shortly.</span></div>" : document.getElementById('contact-us').innerHTML = "<div class='text-base font-semibold p-2 items-center bg-green-600 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-green-900 uppercase px-2 py-1 text-xs font-bold mr-''>Success</span><span class=' mr-2 text-left flex-auto'>Thank you for reachin out. <br>Our team shall revert to you shortly</span></div>") }))
+        .then(response => response.json().then(data => ({ data: data, status: response.status })).then(res => { console.log('DATA:', ('email exist' == res.data.error) ? document.getElementById('contact-us').innerHTML = "<div class='text-base font-semibold p-2 items-center bg-primary1 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-red-500 uppercase px-2 py-1 text-xs font-bold mr-3'>Oops</span><span class='mr-2 text-left flex-auto'>Your email is already with us! Our team will revert to you shortly.</span></div>" : document.getElementById('contact-us').innerHTML = "<div class='text-base font-semibold p-2 items-center bg-green-600 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-green-900 uppercase px-2 py-1 text-xs font-bold mr-''>Success</span><span class=' mr-2 text-left flex-auto'>Thank you for reachin out. <br>Our team shall revert to you shortly</span></div>") }))
         .catch(error => console.error('Error!', document.getElementById('contact-us').innerHTML = "<div class='text-base font-semibold p-2 items-center bg-primary1 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex' role='alert'><span class='flex rounded-full bg-primary1 uppercase px-2 py-1 text-xs font-bold mr-3'>ERROR</span><span class=' mr-2 text-left flex-auto'>Something went wrong! While we are on it you may write to us at  - <a class='bg-dmenu' href='mailto:info@meerana.ae'>info@meerana.ae</a></span></div>"))
 
 
