@@ -7,6 +7,8 @@
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
 
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
 *,
 ::before,
 ::after {
@@ -403,7 +405,7 @@ embed,
 object {
   display: block;
   /* 1 */
-  vertical-align: middle;
+  vertical-align:middle;
   /* 2 */
 }
 
@@ -1777,5 +1779,117 @@ video {
   }
 }
 
+.profiles {
+  display:flex;
+  justify-content:space-evenly;
+  margin: 20px 60px;
+}
+
+.profile {
+  flex-basis: 260px;
+}
+
+.profile .profile-img {
+  margin: auto;
+  height: 200px;
+  margin-top: 30px;
+  text-align: center;
+  width: 200px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 800ms;  
+  box-shadow: 0px 5px 8px rgb(125, 124, 124);
+  background-color: black;
+}
+
+.profile:hover .profile-img {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+.user-name {  
+  font-family: "Poppins", sans-serif;
+  margin-top: 30px;
+  font-size: 25px;
+}
+
+.profile h5 {
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: black;
+}
+
+.flag-name {  
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.flag h5 {
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: black;
+}
+
+.profile p {
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 1150px) {
+  .profiles {
+    flex-direction: column;
+  }
+
+  .profile {
+    display:inline-block;
+    /* flex-direction: column; */
+    align-items: center;
+  }
+
+  .profile p {
+    text-align: center;
+    margin: 20px 60px 80px 60px;
+    font-size: 20px;
+  }
+}
+
+.flag-img {
+  
+  margin: auto;
+  height: 40px;
+  margin-top: 30px;
+  text-align: center;
+  width: 40px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 800ms;  
+  background-color: black;
+}
+
+@media only screen and (max-width: 900px) {
+  .heading {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+  }
+
+  .heading span {
+    font-size: 15px;
+  }
+
+  .profiles {
+    margin: 20px 0;
+  }
+
+  .profile p {
+    margin: 20px 10px 80px 10px;
+  }
+}
 
 
