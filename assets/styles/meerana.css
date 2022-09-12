@@ -1872,6 +1872,13 @@ video {
   background-color: black;
 }
 
+.logo-img {  
+  margin: auto;
+  height: 20px;
+  margin-top: 00px;
+  margin-left: 10px;
+}
+
 @media only screen and (max-width: 900px) {
   .heading {
     font-size: 40px;
