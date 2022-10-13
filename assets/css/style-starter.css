@@ -13381,7 +13381,8 @@ h5.text-blog-e {
 }
 
 .owl-carousel {
-  display: none;
+  display: flex;
+  justify-content: center;
   width: 100%;
 }
 
@@ -14126,3 +14127,4 @@ h5.contact-text {
 }
 
 /* //contact */
+
