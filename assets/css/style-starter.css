@@ -12542,6 +12542,27 @@ h5.small-title-2 {
   line-height: 26px;
 }
 
+#evcharging .counters {
+  padding-top: 40px;
+}
+
+#evcharging .counters span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  display: block;
+  color: #555186;
+}
+
+#evcharging .counters p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #8a87b6;
+}
+
+
 .icon-style-ab i {
   color: var(--secondary-color);
   font-size: 45px;
@@ -12963,6 +12984,11 @@ h3.title-w3l {
   background: rgb(0 193 110 / 8%);
 }
 
+.service-section span.label-style.label-style-4 {
+  background: #F1F1F1;
+  color: #989898;
+}
+
 .service-section .card img {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -13008,7 +13034,7 @@ a.popup-with-zoom-anim {
 
 /* feature section */
 .w3l-feature-8 {
-  background: url(../images/bg2.jpg) no-repeat center fixed;
+  background: url(../images/ev/bg2.jpg) no-repeat center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -13892,7 +13918,7 @@ div#owl-demo2 .owl-dots {
 
 /* inner-banner */
 .inner-banner {
-  background: url(../images/inner-banner.jpg) no-repeat top;
+  background: url(../images/ev/ev/ev3.jpg) no-repeat top;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
