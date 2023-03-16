@@ -201,19 +201,21 @@
                                           
                         <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
                         <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
-                            <iframe title="vimeo-player" src="https://player.vimeo.com/video/788232755?h=20e5c5bfc7" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                            <iframe title="vimeo-player" src="https://player.vimeo.com/video/808803871?h=9f3b294fec" width="360" height="640" frameborder="0" allowfullscreen></iframe>
                         </div>
 
 
                         <a href="pre-order.html" class="btn btn-style mt-md-5 mt-4">Pre Order</a>
 
-                        <a href="" class="btn btn-style-normal mt-md-5 mt-4">Watch Our video</a>
+                        <a href="#small-dialog" class="popup-with-zoom-anim btn btn-style-normal mt-md-5 mt-4">
+                            Watch Our Video
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- meta mall section -->
+    <!-- meta mall section -->   
 
     <!-- meerana colab section -->
     <section id="warehouse" class="w3l-content-12-main">
@@ -473,6 +475,45 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- //bootstrap-->
     <!-- //Js scripts -->
+
+    <!-- magnific popup -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.popup-with-zoom-anim').magnificPopup({
+                type: 'inline',
+
+                fixedContentPos: false,
+                fixedBgPos: true,
+
+                overflowY: 'auto',
+
+                closeBtnInside: true,
+                preloader: false,
+
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-zoom-in'
+            });
+
+            $('.popup-with-move-anim').magnificPopup({
+                type: 'inline',
+
+                fixedContentPos: false,
+                fixedBgPos: true,
+
+                overflowY: 'auto',
+
+                closeBtnInside: true,
+                preloader: false,
+
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-slide-bottom'
+            });
+        });
+    </script>
+    <!-- //magnific popup -->
 </body>
 
 </html>
