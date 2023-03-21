@@ -28,6 +28,7 @@
     <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicon.ico/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/f">
     <link rel="manifest" href="./assets/images/favicon.ico/manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -133,39 +134,20 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-6">
-                    <div class="contact-address p-4">
-                        <div class="contact-icon d-flex align-items-center">
-                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                            <div class="ml-3">
-                                <h5 class="contact-text">Visit Us:</h5>
-                                <p>Business Bay, Dubai</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
-                    <div class="contact-address p-4">
-                        <div class="contact-icon d-flex align-items-center">
-                            <i class="fas fa-phone-alt" aria-hidden="true"></i>
-                            <div class="ml-3">
-                                <h5 class="contact-text">Call Us:</h5>
-                                <a href="tel:+971 52 106 1086">+971 52 106 1086</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mt-lg-0 mt-4">
-                    <div class="contact-address p-4">
-                        <div class="contact-icon d-flex align-items-center">
-                            <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
-                            <div class="ml-3">
-                                <h5 class="contact-text">Mail Us:</h5>
-                                <a href="mailto:info@meerana.ae"> info@meerana.ae</a>
-                            </div>
-                        </div>
+                    <div class="contact-address p-4">                        
+                        <a href="https://wa.me/c/971568755296">
+                            <div class=" d-flex align-items-center">
+                                    <i class="fa fa-whatsapp" aria-hidden="true" style="font-size:50px;color:green"></i>
+                                    <div class="ml-3">
+                                        <h5 class="contact-text">Order by whatsapp</h5>
+                                    </div>
+                            </div>                        
+                        </a>
                     </div>
                 </div>
             </div>
+            <br><br>
+            <h1 class="text-center">or</h1>
             <div class="contact-w3pvt-form mt-5 pt-lg-4">
                 <form method="post" class="w3layouts-contact-fm" action="https://sendmail.w3layouts.com/submitForm">
                     <div class="row main-cont-sec">
@@ -335,30 +317,11 @@
 
     <!-- Js scripts -->
     <!-- move top -->
-    <button onclick="topFunction()" id="movetop" title="Go to top">
-        <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+    <button id="whatsappicon" title="">
+        <a href="https://wa.me/c/971568755296">
+            <i class="fa fa-whatsapp" aria-hidden="true" style="font-size:75px;color:green"></i>
+        </a>
     </button>
-    <script>
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () {
-            scrollFunction()
-        };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("movetop").style.display = "block";
-            } else {
-                document.getElementById("movetop").style.display = "none";
-            }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
-    <!-- //move top -->
 
     <!-- common jquery plugin -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>

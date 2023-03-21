@@ -11902,6 +11902,27 @@ div#small-dialog1 iframe {
   padding: 0;
 }
 
+#whatsappicon {
+  position: fixed;
+  bottom: 90px;
+  right: 50px;
+  z-index: 9;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  padding: 0;
+}
+
 #movetop:hover {
   opacity: .8;
 }
