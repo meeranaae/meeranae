@@ -11904,8 +11904,8 @@ div#small-dialog1 iframe {
 
 #whatsappicon {
   position: fixed;
-  bottom: 90px;
-  right: 15px;
+  bottom: 40px;
+  right: 40px;
   z-index: 9;
   font-size: 16px;
   border: none;
