@@ -210,9 +210,6 @@
                             <!-- <i class="fa fa-whatsapp" style="font-size:25px;color:white"></i> -->
                             Pre Order
                         </a>
-
-                        
-
                         <a href="#small-dialog" class="popup-with-zoom-anim btn btn-style-normal mt-md-5 mt-4">
                             Watch Our Video
                         </a>
@@ -222,6 +219,127 @@
         </div>
     </section>
     <!-- meta mall section -->   
+
+    <section class="w3l-clients py-5" id="testimonials">
+        <div class="container py-md-5 py-4">
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6 section-heading">
+                    <h5 class="small-title-2">Our Clients</h5>
+                    <h3 class="title-style-2">What People Say</h3>
+                </div>
+                <div class="col-md-6 section-heading mt-md-0 mt-2">
+                    <p>
+                        We pride ourselves on providing exceptional customer service and building long-lasting relationships with our 
+                        clients. We have a proven track record of success and have worked with a diverse range of trusted clients
+                    </p>
+                </div>
+            </div>
+            <div id="owl-demo2" class="owl-carousel owl-theme pb-5">
+                <div class="item">
+                    <div class="testimonial-content">
+                        <div class="testimonial">
+                            <blockquote>
+                                <q>Works great, just as advertised</q>
+                            </blockquote>
+                            <p>It’s great , works as advertised. But their support is too j notch. 
+                                I’m really impressed with the level of help and promptness … good stuff</p>
+                        </div>
+                        <div class="bottom-info mt-4">
+                            <div class="people-info align-self">
+                                <h3>Andrej C.</h3>
+                                <p class="identity">Verified Buyer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="testimonial-content">
+                        <div class="testimonial">
+                            <blockquote>
+                                <q>The product worked great!</q>
+                            </blockquote>
+                            <p>The product worked great! We installed two units so the homeowner could open and close the gates with his phone. 
+                                Then the homeowner set up a scheduled for each set of gates to open and close at a predetermined time. So </p>
+                        </div>
+                        <div class="bottom-info mt-4">
+                            <div class="people-info align-self">
+                                <h3>Frank T</h3>
+                                <p class="identity">Verified buyer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="testimonial-content">
+                        <div class="testimonial">
+                            <blockquote>
+                                <q>Easy to Install</q>
+                            </blockquote>
+                            <p>Product was easy to install and works just as described. I love the widget too long to</p>
+                        </div>
+                        <div class="bottom-info mt-4">
+                            <div class="people-info align-self">
+                                <h3>Michael N.</h3>
+                                <p class="identity">Verified Buyer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="testimonial-content">
+                        <div class="testimonial">
+                            <blockquote>
+                                <q>Works perfectly on a garage door which</q>
+                            </blockquote>
+                            <p>Works perfectly on a garage door which is not compatible. Great product.</p>
+                        </div>
+                        <div class="bottom-info mt-4">
+                            <div class="people-info align-self">
+                                <h3>Christopher A</h3>
+                                <p class="identity">Verified Buyer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="testimonial-content">
+                        <div class="testimonial">
+                            <blockquote>
+                                <q>I hook it up on my E8-400 model Gate opener.</q>
+                            </blockquote>
+                            <p>I hook it up on my E8-400 model Gate opener. Works perfect. 
+                                My router is about 900 yards away and it works just fine. 
+                                Love the Alexa connection to open and close the gate. It was easy to install. 
+                                It also arrive from Hungray in 3 days. I live in Louisiana.
+                            </p>
+                        </div>
+                        <div class="bottom-info mt-4">
+                            <div class="people-info align-self">
+                                <h3>John wilson</h3>
+                                <p class="identity">Verified Buyer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="testimonial-content">
+                        <div class="testimonial">
+                            <blockquote>
+                                <q>Does exactly what I hoped it would do.</q>
+                            </blockquote>
+                            <p>Does exactly what I hoped it would do. Turned my eagle gate opener into a smart gate and works very reliably.</p>
+                        </div>
+                        <div class="bottom-info mt-4">
+                            <div class="people-info align-self">
+                                <h3>Robert A.</h3>
+                                <p class="identity">Verified Buyer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- meerana colab section -->
     <section id="warehouse" class="w3l-content-12-main">
@@ -520,6 +638,45 @@
         });
     </script>
     <!-- //magnific popup -->
+
+    <!-- owl carousel -->
+    <script src="assets/js/owl.carousel.js"></script>
+    <!-- script for tesimonials carousel slider -->
+    <script>
+        $(document).ready(function () {
+            $("#owl-demo2").owlCarousel({
+                loop: true,
+                nav: false,
+                margin: 50,
+                responsiveClass: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplaySpeed: 1000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    736: {
+                        items: 1,
+                        nav: false
+                    },
+                    991: {
+                        items: 2,
+                        margin: 30,
+                        nav: false
+                    },
+                    1080: {
+                        items: 3,
+                        nav: false
+                    }
+                }
+            })
+        })
+    </script>
+    <!-- //script for tesimonials carousel slider -->
+    <!-- owl carousel -->
 </body>
 
 </html>
